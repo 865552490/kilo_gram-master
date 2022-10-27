@@ -31,7 +31,7 @@ public class PersonController {
         Person person = personService.findByName(name);
         List<CustomNode> customNodes = new ArrayList<>();
         Set<Movie> movieSet = personService.getMoviesByRelationship(person,rel);
-        
+        System.out.println("dsadasdas");
         for(Movie movie : movieSet){
             customNodes.add(new CustomNode(movie.getTitle(),2, movie));
             //customLinks.add(new CustomLink(person.getName(),movie.getTitle(),5));
